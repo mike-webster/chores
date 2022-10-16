@@ -1,0 +1,9 @@
+{
+    "chore name": "clean counter a",
+    "room": "kitchen",
+    "estimate": 2,
+    "description": "remove unnecessary items, wipe down with cleaner",
+    "daysToComplete": 0,
+    "daysUntilReoccurance": 7,
+    "lastCreated": null
+}
