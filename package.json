@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/mike-webster/chores/issues"
   },
-  "homepage": "https://github.com/mike-webster/chores#readme"
+  "homepage": "https://github.com/mike-webster/chores#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
 }
