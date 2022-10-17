@@ -2,9 +2,7 @@
 
 async function createIssue (title, body, repo, owner, token, options) {
     try {
-
         const url = `https://api.github.com/repos/${owner}/${repo}/issues`;
-
         const headers =  {
             'Accept': 'application/vnd.github+json',
             'Authorization': `Bearer ${token}`,
@@ -25,9 +23,11 @@ async function createIssue (title, body, repo, owner, token, options) {
             headers,
             body: JSON.stringify(body)
         });
+
         if (!resp.ok) {
             throw `unhappy response from github: ${JSON.stringify(resp)}`;
         }
+        
         console.log(`issue created: ${(await resp.json()).html_url}`)
     } catch (ex) {
         console.log(`utils.createIssue::error: ${ex}`);
